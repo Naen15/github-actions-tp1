@@ -6,6 +6,3 @@ jobs:
     steps:
       - name: Hello step
         run: echo "Hello World from GitHub Actions!"
-
-      - name: Hello Hello Hello
-        run: echo "Hello Fatoubinks"
