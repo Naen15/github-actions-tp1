@@ -1,26 +1,13 @@
-from model import predict
-_
-sentiment
-def test
-_predict
-_positive():
-assert predict
-_
-sentiment("I am happy today") ==
-"positive"
-def test
-_predict
-_
-negative():
-assert predict
-_
-sentiment("I feel sad") ==
-"negative"
-def test
-_predict
-_
-neutral():
-assert predict
-_
-sentiment("The sky is blue") ==
-"neutral"
+from model import predict_sentiment
+
+
+def test_predict_positive():
+    assert predict_sentiment("I am happy today") == "positive"
+
+
+def test_predict_negative():
+    assert predict_sentiment("I feel sad") == "negative"
+
+
+def test_predict_neutral():
+    assert predict_sentiment("The sky is blue") == "neutral"
